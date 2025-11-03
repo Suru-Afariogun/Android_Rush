@@ -6,8 +6,29 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Title Screen.unity
+    guid: 20549e8768c114845a3d4c2b5a52d2ab
+  - enabled: 1
+    path: Assets/Scenes/Options.unity
+    guid: 51127870c9cda6c4bb8a825b559774dd
+  - enabled: 1
+    path: Assets/Scenes/Mode Select.unity
+    guid: 8fef1bdb86c7ed94299359e0c92a5f5a
+  - enabled: 1
+    path: Assets/Scenes/Player Select.unity
+    guid: 1ca49450d7e49684b90fea6e2d00502b
+  - enabled: 1
+    path: Assets/Scenes/000 Bossfight.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/PVP Stage.unity
+    guid: a4fabede35584e940930e5eb1c469565
+  - enabled: 1
+    path: Assets/Scenes/Tag Stage.unity
+    guid: 165e03e0e44231d4aab46cabed6d6738
+  - enabled: 1
+    path: Assets/Scenes/Race Stage.unity
+    guid: fe46456081f816a4f97bd5c668cf26c5
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
