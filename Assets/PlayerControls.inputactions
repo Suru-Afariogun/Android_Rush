@@ -24,9 +24,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Attack",
+                    "name": "AttackA",
                     "type": "Button",
                     "id": "fdc34687-95d7-473c-ac83-daac4f391653",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "AttackB",
+                    "type": "Button",
+                    "id": "2a8e798f-8988-4fab-8f9f-58c91e86a476",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -204,7 +213,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Attack",
+                    "action": "AttackA",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -215,7 +224,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Attack",
+                    "action": "AttackA",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -226,14 +235,47 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Attack",
+                    "action": "AttackA",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "546031e5-4ad6-4153-b168-c3a6fb808f91",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AttackB",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "15c7bb99-e71f-4ee2-b34f-ed3cb3013e33",
+                    "path": "<Keyboard>/n",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AttackB",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "36849d92-75ed-4ff5-a319-68b627104c9d",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AttackB",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "0e2880a9-69bf-4a5f-a0ea-8eee9c598ba7",
-                    "path": "<Gamepad>/buttonEast",
+                    "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -244,7 +286,7 @@
                 {
                     "name": "",
                     "id": "3be0a95c-7b2a-41ae-b6fc-b511b27f3fc9",
-                    "path": "<Keyboard>/n",
+                    "path": "<Keyboard>/b",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -255,7 +297,7 @@
                 {
                     "name": "",
                     "id": "c22ca1dd-3be1-4e57-8185-9e3948427779",
-                    "path": "<Keyboard>/p",
+                    "path": "<Keyboard>/o",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

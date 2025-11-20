@@ -63,7 +63,8 @@ public class PauseMenuManager : MonoBehaviour
     public GameObject pauseMenuPrefab;
     private GameObject pauseMenuInstance;
 
-    private GlobalControls controls;
+      private GlobalControls.cs.GlobalControls controls;
+      private PauseMenu pauseMenu;
 
     void Awake()
     {
@@ -75,12 +76,13 @@ public class PauseMenuManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        controls = new GlobalControls();
+        controls = new GlobalControls.cs.GlobalControls();
         controls.UI.Pause.performed += ctx => TogglePause();
 
         if (pauseMenuPrefab != null && pauseMenuInstance == null)
         {
             pauseMenuInstance = Instantiate(pauseMenuPrefab);
+            pauseMenu = pauseMenuInstance.GetComponent<PauseMenu>();
             pauseMenuInstance.SetActive(false);
             DontDestroyOnLoad(pauseMenuInstance);
         }
@@ -91,10 +93,17 @@ public class PauseMenuManager : MonoBehaviour
 
     public void TogglePause()
     {
-        if (pauseMenuInstance == null) return;
+        if (pauseMenuInstance == null || pauseMenu == null) return;
 
-        bool currentlyActive = pauseMenuInstance.activeSelf;
-        pauseMenuInstance.SetActive(!currentlyActive);
-        Time.timeScale = currentlyActive ? 1f : 0f;
-    }
+        if (PauseMenu.isPaused)
+        {
+            pauseMenu.Resume();
+            pauseMenuInstance.SetActive(false);
+        }
+        else
+        {
+            pauseMenuInstance.SetActive(true);
+            pauseMenu.Pause();
+        }
+}
 }

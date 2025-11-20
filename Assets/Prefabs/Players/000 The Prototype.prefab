@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 2361504583891621221}
   - component: {fileID: 6043363844003706816}
   - component: {fileID: 3454373751133611065}
+  - component: {fileID: 778613281997009544}
+  - component: {fileID: 2293000713484465207}
   m_Layer: 0
   m_Name: 000 The Prototype
   m_TagString: Player
@@ -30,9 +32,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 104.4, y: -13.29, z: 0}
-  m_LocalScale: {x: 0.52900404, y: 0.51602614, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5808189637617132343}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4664080625697448540
@@ -79,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7837252244875826636, guid: b48f15ee8015d444fb6816b7d419b14a, type: 3}
+  m_Sprite: {fileID: -7680593463006045828, guid: 2f1c9240d1c5af54fb73f4a7b6bfa8e7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -124,17 +127,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.5}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 20.839998, y: 42.44}
+    oldSize: {x: 29.680002, y: 34.04665}
     newSize: {x: 20.839998, y: 42.44}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 10, y: 40}
+  m_Size: {x: 16, y: 32}
   m_EdgeRadius: 0
 --- !u!50 &6043363844003706816
 Rigidbody2D:
@@ -175,6 +178,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c072c5648aabbdc4682f7d1f5887e12d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 14
-  jumpForce: 100
-  fallMultiplier: 60
+  characterAnimator: {fileID: 2293000713484465207}
+  groundCheck: {fileID: 5808189637617132343}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  moveSpeed: 27
+  jumpForce: 160
+  fallMultiplier: 70
+  groundCheckRadius: 0.8
+  attackCooldown: 1.2
+--- !u!95 &778613281997009544
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315651342324675753}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4fad51ea0f1255e4da00edcb86b55ce8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2293000713484465207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315651342324675753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0424de41be536343990041834ffd64c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 778613281997009544}
+--- !u!1 &7965225044129526745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5808189637617132343}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5808189637617132343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7965225044129526745}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -17.42, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7700341858474664029}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

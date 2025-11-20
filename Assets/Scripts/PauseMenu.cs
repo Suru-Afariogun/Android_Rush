@@ -6,21 +6,6 @@ public class PauseMenu : MonoBehaviour
     public static bool isPaused = false;
     public GameObject pauseMenuUI;
 
-    void Update()
-    {
-        // Keyboard toggle
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            TogglePause();
-        }
-
-        // Controller toggle
-        if (Input.GetButtonDown("Start") || Input.GetButtonDown("Pause"))
-        {
-            TogglePause();
-        }
-    }
-
     public void TogglePause()
     {
         if (isPaused)
@@ -49,27 +34,35 @@ public class PauseMenu : MonoBehaviour
 
     public void GoToOptions()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("Options");
+       pauseMenuUI.SetActive(false);
+       isPaused = false;
+       Time.timeScale =1f;
+       SceneManager.LoadScene("Options");
     }
 
     public void GoToModeSelect()
     {
+        pauseMenuUI.SetActive(false);
+        isPaused = false;
         Time.timeScale = 1f;
-        SceneManager.LoadScene("ModeSelect");
+        SceneManager.LoadScene("Mode Select");
     }
 
-    public void GoToCharacterSelect()
-    {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("PlayerSelect");
-    }
+   public void GoToCharacterSelect()
+{
+    pauseMenuUI.SetActive(false);
+    isPaused = false;
+    Time.timeScale = 1f;
+    SceneManager.LoadScene("Player Select");
+}
 
-    public void QuitToTitle()
-    {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("TitleScreen");
-    }
+   public void QuitToTitle()
+{
+    pauseMenuUI.SetActive(false);
+    isPaused = false;
+    Time.timeScale = 1f;
+    SceneManager.LoadScene("Title Screen");
+}
 
     //
     void OnEnable()
@@ -84,7 +77,13 @@ void OnDisable()
 
 void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode mode)
 {
-    gameObject.SetActive(false);
+    string sceneName = scene.name;
+    if (sceneName == "Title Screen" || sceneName == "Mode Select" || sceneName == "Player Select")
+    {
+        pauseMenuUI.SetActive(false);
+        isPaused = false;
+        Time.timeScale = 1f;
+    }
 }
 
 }

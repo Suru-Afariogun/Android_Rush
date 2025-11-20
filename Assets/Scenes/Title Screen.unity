@@ -743,6 +743,8 @@ MonoBehaviour:
   - {fileID: 6061159145473340945, guid: dbb59a7cfe2cb5040b83522fd97873ea, type: 3}
   - {fileID: 2657148429150752616, guid: e0bd5271ea77d004e84f9316dfa995b2, type: 3}
   - {fileID: 1315651342324675753, guid: fca82f05cd1a26146874671e4fc8ef59, type: 3}
+  - {fileID: 1993405906565078890, guid: 4e87aa3c315553a45b79013f578b5280, type: 3}
+  - {fileID: 3306230584834974153, guid: fdc7c92d20134d8459c46bc11de24dd2, type: 3}
 --- !u!4 &800347627
 Transform:
   m_ObjectHideFlags: 0
@@ -1621,6 +1623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1976471900}
   - component: {fileID: 1976471899}
+  - component: {fileID: 1976471901}
   m_Layer: 0
   m_Name: PauseMenuManager
   m_TagString: Untagged
@@ -1656,6 +1659,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1976471901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976471898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27a42f93150afa84281ececa2c1d6aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 2497347920162994499, guid: 9d172c7b9c6790e40becd03463831b3a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
