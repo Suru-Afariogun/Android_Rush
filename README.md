@@ -1,5 +1,7 @@
 # Android Rush
 
+   ![Silver Sprinter vs Dustin Dasher promotion poster](README Art/Android Rush promotion poster 1(Silver sprinter vs Dustin Dasher).png)
+
 **Android Rush** is a 2D action-platformer prototype created by **Suru Afariogun**.
 It combines fast-paced combat, responsive movement, and dynamic encounters — all built in **Unity (C#)**.
 
