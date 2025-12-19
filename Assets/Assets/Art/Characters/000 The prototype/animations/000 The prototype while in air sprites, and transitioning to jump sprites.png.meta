@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: 92069c617bde75541827086051bef469
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6883691049371894157
+    second: 000 The prototype while in air sprites, and transitioning to jump sprites_0
+  - first:
+      213: 4991453786098946239
+    second: 000 The prototype while in air sprites, and transitioning to jump sprites_1
+  - first:
+      213: 5051666334737164800
+    second: 000 The prototype while in air sprites, and transitioning to jump sprites_2
+  - first:
+      213: -756028070517722537
+    second: 000 The prototype while in air sprites, and transitioning to jump sprites_3
+  - first:
+      213: 1684072861972618329
+    second: 000 The prototype while in air sprites, and transitioning to jump sprites_4
+  - first:
+      213: -8968715185298520896
+    second: 000 The prototype while in air sprites, and transitioning to jump sprites_5
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 000 The prototype while in air sprites, and transitioning to jump sprites_0
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 4905
+        width: 2347
+        height: 4020
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ef6a246773870a0800000000000000
+      internalID: -6883691049371894157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 000 The prototype while in air sprites, and transitioning to jump sprites_1
+      rect:
+        serializedVersion: 2
+        x: 3643
+        y: 5324
+        width: 3711
+        height: 2384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb0d439c5c4354540800000000000000
+      internalID: 4991453786098946239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 000 The prototype while in air sprites, and transitioning to jump sprites_2
+      rect:
+        serializedVersion: 2
+        x: 7986
+        y: 4985
+        width: 3222
+        height: 3185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00aeecd34cf1b1640800000000000000
+      internalID: 5051666334737164800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 000 The prototype while in air sprites, and transitioning to jump sprites_3
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 259
+        width: 3297
+        height: 4109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7523198b97c0285f0800000000000000
+      internalID: -756028070517722537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 000 The prototype while in air sprites, and transitioning to jump sprites_4
+      rect:
+        serializedVersion: 2
+        x: 4027
+        y: 1027
+        width: 3926
+        height: 3995
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95cd0c968570f5710800000000000000
+      internalID: 1684072861972618329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 000 The prototype while in air sprites, and transitioning to jump sprites_5
+      rect:
+        serializedVersion: 2
+        x: 8711
+        y: 782
+        width: 2327
+        height: 3913
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c441a8ae09b88380800000000000000
+      internalID: -8968715185298520896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      000 The prototype while in air sprites, and transitioning to jump sprites_0: -6883691049371894157
+      000 The prototype while in air sprites, and transitioning to jump sprites_1: 4991453786098946239
+      000 The prototype while in air sprites, and transitioning to jump sprites_2: 5051666334737164800
+      000 The prototype while in air sprites, and transitioning to jump sprites_3: -756028070517722537
+      000 The prototype while in air sprites, and transitioning to jump sprites_4: 1684072861972618329
+      000 The prototype while in air sprites, and transitioning to jump sprites_5: -8968715185298520896
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
